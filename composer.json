@@ -1,31 +1,28 @@
 {
-    "name": "Open-Socio",
-    "description": "Sistema para gerenciamento de sócio-torcedores.",
-    "authors": {
-        "name": "Adriano Victor"
-    },
+    "name": "Open Sócio",
+    "description": "",
+    "authors": [
+        {
+            "name": "Adriano Victor",
+            "email": "adrianovictor@hotmail.com"
+        }
+    ],
+    "type": "project",
     "require": {
-        "silex/silex": "dev-master",
-        "silex/providers": "dev-master",
-        "silex/web-profiler": "dev-master",
-        "symfony/browser-kit": "v3.2.0",
-        "symfony/class-loader": "v3.2.0",
-        "symfony/config": "v3.2.0",
-        "symfony/debug": "v3.2.0",
-        "symfony/console": "v3.2.0",
-        "symfony/finder": "v3.2.0",
-        "symfony/form": "v3.2.0",
-        "symfony/monolog-bridge": "v3.2.0",
-        "symfony/process": "v3.2.0",
-        "symfony/security": "v3.2.0",
-        "symfony/translation": "v3.2.0",
-        "symfony/twig-bridge": "v3.2.0",
-        "symfony/routing": "v3.2.0",
-        "symfony/doctrine-bridge": "v3.2.0",
-        "symfony/validator": "v3.2.0",
-        "symfony/options-resolver": "v3.2.0",
-        "doctrine/dbal": "v2.4.5",
-        "twig/twig": "v1.33.1",
-        "knplabs/console-service-provider": "2.0"
+        "php": ">=5.5.9",
+        "silex/silex": "~2.0",
+        "symfony/config": "~3.3.0",
+        "symfony/form": "~3.3.0",
+        "symfony/validator": "~3.3.0",
+        "symfony/security-csrf": "~3.3.0",
+        "symfony/twig-bridge": "~3.3.0",
+        "doctrine/dbal": ">=2.4",
+        "doctrine/annotations": "~1.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenSocio\\": "src/",
+            "OpenSocio\\App\\": "app/"
+        }
     }
 }
